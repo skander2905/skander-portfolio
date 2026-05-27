@@ -5,7 +5,7 @@ export const site = {
   email: "skander.abid@ensi-uma.tn",
   github: "https://github.com/skander2905",
   linkedin: "https://www.linkedin.com/in/skander-abid-1a5997236",
-  url: "https://skanderabid.com",
+  url: "https://skander-portfolio-henna.vercel.app/",
   description:
     "Software engineer focused on the frontend. I build product interfaces in React, Next.js, and TypeScript — UI architecture, component systems, and the small details that make products feel finished."
 };
