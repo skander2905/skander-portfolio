@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Skander Abid — Software Engineer</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+
+  :root {
+    --fg: #000;
+    --rule: #000;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    /* Latin Modern if installed (LaTeX), otherwise the closest system serifs */
+    font-family: "Latin Modern Roman", "Cambria", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    font-size: 10.5pt;
+    line-height: 1.3;
+    color: var(--fg);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  .lnk::after { content: "\2197"; font-size: 0.72em; vertical-align: 0.32em; padding-left: 0.15em; }
+
+  /* ---- header ---- */
+  h1 { font-size: 30pt; font-weight: 400; line-height: 1.05; letter-spacing: 0.2pt; }
+  .role { font-size: 15pt; font-weight: 400; line-height: 1.2; margin-top: 1pt; }
+  .contact { font-size: 10.5pt; margin-top: 3pt; }
+  .sep { padding: 0 3.5pt; }
+
+  /* ---- sections ---- */
+  section { margin-top: 8.5pt; }
+  h2 {
+    font-size: 12.5pt; font-weight: 700;
+    border-bottom: 0.6pt solid var(--rule);
+    padding-bottom: 1.5pt; margin-bottom: 4pt;
+  }
+
+  /* ---- skills ---- */
+  .skills p { margin-bottom: 0.8pt; }
+  .skills b { font-weight: 700; }
+
+  /* ---- entries ---- */
+  .entry { margin-bottom: 6pt; break-inside: avoid; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 10pt;
+  }
+  .entry-head .left b { font-weight: 700; }
+  .entry-head .right { white-space: nowrap; }
+  .entry-note { margin-top: 0.5pt; }
+
+  ul { list-style: none; margin-top: 1.5pt; }
+  li { position: relative; padding-left: 11pt; margin-bottom: 1.2pt; }
+  li::before { content: "\2022"; position: absolute; left: 2pt; }
+  li b { font-weight: 700; }
+</style>
+</head>
+<body>
+
+<h1>Skander Abid</h1>
+<div class="role">Software Engineer</div>
+<div class="contact">
+  <a href="mailto:skanderabid53@gmail.com">skanderabid53@gmail.com</a><span class="sep">|</span><a
+    class="lnk" href="https://skander-portfolio-henna.vercel.app/">Portfolio</a><span class="sep">|</span><a
+    class="lnk" href="https://www.linkedin.com/in/skander-abid-1a5997236">LinkedIn</a><span class="sep">|</span><a
+    class="lnk" href="https://github.com/skander2905">GitHub</a>
+</div>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>Languages:</b> TypeScript, JavaScript, SQL</p>
+    <p><b>Frontend:</b> React, Next.js, Tailwind CSS, shadcn/ui, Framer Motion</p>
+    <p><b>Backend:</b> Node.js, Express, Prisma, PostgreSQL, MongoDB</p>
+    <p><b>Infrastructure:</b> Docker, Kubernetes, Vercel, Render, Neon</p>
+    <p><b>Practice:</b> Git, Code Review, Testing, CI/CD, Agile/Scrum</p>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="left"><b>Software Engineer</b>, <a class="lnk" href="https://www.cognira.com">Cognira</a> – Tunis, Tunisia</div>
+      <div class="right">Sep 2024 – Present</div>
+    </div>
+    <ul>
+      <li>Ship and maintain feature areas of <b>PromoAI</b>, Cognira's retail-AI platform used by enterprise pricing and promotion teams to plan and forecast.</li>
+      <li>Design component systems and UI architecture for complex tabular data, filters, and forecast flows in React and TypeScript.</li>
+      <li>Profile and resolve frontend performance issues across rendering, data loading, and state updates to keep the application fast under heavy data.</li>
+      <li>Work directly with API, UX, and QA to take work from spec to release through code review, testing, and clear documentation.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="left"><b>Software Engineer Intern</b>, <a class="lnk" href="https://www.cognira.com">Cognira</a> – Tunis, Tunisia</div>
+      <div class="right">Feb 2024 – May 2024</div>
+    </div>
+    <ul>
+      <li>Designed and shipped an internal agile project-management platform — sprint planning, discussion boards, document sharing, and real-time chat.</li>
+      <li>Architected the Next.js frontend and an Express/MongoDB service layer, owning the work end-to-end.</li>
+      <li>Ran the project on a Scrum cadence with sprints, reviews, and retrospectives.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <div class="left"><b>Software Engineer Intern</b>, <a class="lnk" href="https://www.cognira.com">Cognira</a> – Tunis, Tunisia</div>
+      <div class="right">Jul 2023 – Aug 2023</div>
+    </div>
+    <ul>
+      <li>Built an internal event platform for Cognira's social committee covering event creation, voting, feedback, and suggestions.</li>
+      <li>Implemented both frontend and backend in Next.js, with Firebase for auth/realtime and PostgreSQL for persistence.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="entry-head">
+      <div class="left"><b><a class="lnk" href="https://www.ensi.rnu.tn/">National School of Computer Sciences (ENSI), Tunisia</a></b></div>
+      <div class="right">Sept 2021 – May 2024</div>
+    </div>
+    <div class="entry-note">Engineering Degree in Computer Science – Specialization in Finance.</div>
+    <div class="entry-note">Relevant coursework: Algorithms &amp; Data Structures, Operating Systems, Databases, Software Engineering, Distributed Systems, Quantitative Finance, Statistics &amp; Probability.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="entry">
+    <div class="entry-head">
+      <div class="left"><b>SplitEase</b> – Expense Splitting App</div>
+      <div class="right"><a class="lnk" href="https://github.com/skander2905/split-app">GitHub Repo</a><span class="sep">|</span><a class="lnk" href="https://split-app-taupe-one.vercel.app">Live App</a></div>
+    </div>
+    <ul>
+      <li>Fullstack expense-splitting app for groups, typed end-to-end with TypeScript, React (Vite), Node.js/Express, and Prisma over PostgreSQL.</li>
+      <li>Implemented a <b>greedy min-cash-flow algorithm</b> to compute the minimum set of transfers required to settle a group's debts.</li>
+      <li>Structured the backend around a clean routes – controllers – services boundary; used optimistic React state for snappy UI updates.</li>
+      <li>Deployed in production: frontend on Vercel, API on Render, PostgreSQL on Neon – fully functional, URL-shareable, no auth friction.</li>
+      <li><b>Stack:</b> TypeScript, React, Node.js, Express, Prisma, PostgreSQL, Tailwind CSS, shadcn/ui, Vercel, Render, Neon.</li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>
