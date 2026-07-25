@@ -2,7 +2,7 @@ export const site = {
   name: "Skander Abid",
   role: "Software Engineer",
   location: "Tunis, Tunisia",
-  email: "skander.abid@ensi-uma.tn",
+  email: "skanderabid53@gmail.com",
   github: "https://github.com/skander2905",
   linkedin: "https://www.linkedin.com/in/skander-abid-1a5997236",
   url: "https://skander-portfolio-henna.vercel.app/",
