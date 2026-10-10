@@ -37,14 +37,22 @@ export const experience: Experience[] = [
     period: "Sep 2024 — Present",
     location: "Tunis",
     summary:
-      "Frontend engineer on PromoAI, Cognira's retail-AI platform for promotion planning and forecasting.",
+      "Frontend-focused engineer on PromoAI, Cognira's retail-AI platform for promotion planning and forecasting, also contributing to the Automation team.",
     bullets: [
-      "Ship and maintain feature areas of the PromoAI web application used by enterprise retail teams.",
-      "Design component systems and UI architecture around complex tabular data, filters, and forecast flows.",
-      "Profile and resolve frontend performance issues across rendering, data loading, and state updates.",
-      "Work directly with API, UX, and QA to take work from spec to release with tests, reviews, and documentation."
+      "Develop and maintain the PromoAI web application used by enterprise retail teams, with React, Redux Toolkit, and TypeScript.",
+      "Build complex, data-heavy interfaces and reusable components; improve state management and rendering performance, and modernise legacy code toward TypeScript.",
+      "Contribute to the Automation team by writing Playwright end-to-end tests that run in CI, and work with backend, QA, and product teams from spec to release through code review."
     ],
-    stack: ["TypeScript", "React", "Next.js", "REST APIs", "Testing"]
+    stack: [
+      "TypeScript",
+      "React",
+      "Redux Toolkit",
+      "Material UI",
+      "Vite",
+      "Vitest",
+      "Playwright",
+      "GitHub Actions"
+    ]
   },
   {
     company: "Cognira",
@@ -52,12 +60,13 @@ export const experience: Experience[] = [
     role: "Software Engineer Intern",
     period: "Feb 2024 — May 2024",
     summary:
-      "Built an internal agile project-management platform with real-time collaboration features.",
+      "Owned an internal project-management tool for Cognira's teams, from design to release.",
     bullets: [
-      "Designed and implemented sprint planning, discussion boards, document sharing, and live chat.",
-      "Architected the Next.js frontend and an Express/MongoDB service layer; shipped against a Scrum cadence."
+      "Designed and shipped an internal agile project-management platform covering sprint planning, discussion boards, and document sharing.",
+      "Built the Next.js frontend, the Express/MongoDB service layer, and real-time team chat, owning the work end-to-end.",
+      "Ran the project on a Scrum cadence with sprint planning, reviews, and retrospectives."
     ],
-    stack: ["Next.js", "Express", "MongoDB"]
+    stack: ["JavaScript", "Next.js", "React", "Node.js", "Express", "MongoDB"]
   },
   {
     company: "Cognira",
@@ -65,9 +74,13 @@ export const experience: Experience[] = [
     role: "Software Engineer Intern",
     period: "Jul 2023 — Aug 2023",
     summary:
-      "Shipped an internal event platform for the company's social committee — event creation, voting, and feedback.",
-    bullets: [],
-    stack: ["Next.js", "Firebase", "PostgreSQL"]
+      "Summer internship building a tool for the company's social committee.",
+    bullets: [
+      "Built an internal event platform for Cognira's social committee to create and manage company events.",
+      "Added voting, feedback, and suggestion flows so employees could shape upcoming events.",
+      "Implemented frontend and backend in Next.js, with Firebase for auth/realtime and PostgreSQL for persistence."
+    ],
+    stack: ["JavaScript", "Next.js", "React", "Firebase", "PostgreSQL"]
   }
 ];
 
@@ -82,6 +95,35 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    name: "CarCare",
+    tagline: "A vehicle cost and maintenance platform that tells you what your car really costs.",
+    description:
+      "CarCare turns fuel receipts, service invoices, insurance renewals, and odometer readings into a true cost per kilometre, and flags what needs attention next.",
+    highlights: [
+      "Full-to-full fuel consumption engine that handles partial fills and missed logs, plus a maintenance due/overdue engine for schedules by distance, time, or both.",
+      "Layered NestJS API with I/O-free domain logic, exact-decimal money, SQL-side cost aggregation, membership-based authorisation, JWT refresh-token rotation, and Google sign-in.",
+      "BullMQ workers for expiry and service reminders; integration tests against real PostgreSQL and Redis; GitHub Actions CI publishing Docker images to GHCR."
+    ],
+    stack: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "Redis",
+      "BullMQ",
+      "Tailwind",
+      "shadcn/ui",
+      "Docker"
+    ],
+    links: [
+      { label: "Live", href: "https://carcare-phi.vercel.app" },
+      { label: "Source", href: "https://github.com/skander2905/carcare" }
+    ],
+    year: "2026"
+  },
   {
     name: "SplitEase",
     tagline: "A fullstack expense splitter with a real settlement algorithm.",
@@ -102,11 +144,37 @@ export const projects: Project[] = [
 ];
 
 export const stack = {
-  Languages: ["TypeScript", "JavaScript", "SQL"],
-  Frontend: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "shadcn/ui"],
-  Backend: ["Node.js", "Express", "Prisma", "PostgreSQL", "MongoDB"],
-  Infra: ["Docker", "Kubernetes", "Vercel", "Render", "Neon"],
-  Practice: ["Git", "Code review", "Testing", "CI/CD"]
+  Frontend: [
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "Redux Toolkit",
+    "Next.js",
+    "Material UI",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Vite"
+  ],
+  "Backend & Data": [
+    "Node.js",
+    "NestJS",
+    "Express",
+    "Prisma",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "SQL"
+  ],
+  "Testing & DevOps": [
+    "Playwright",
+    "Vitest",
+    "GitHub Actions",
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "Vercel",
+    "Render"
+  ]
 };
 
 export const education = {
